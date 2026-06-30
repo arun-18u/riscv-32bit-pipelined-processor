@@ -1,0 +1,9 @@
+# Icarus Verilog generated files
+pc_sim
+*.vcd
+
+# Log files
+*.log
+
+# Output files
+*.out-
