@@ -1,10 +1,23 @@
-# 32-bit 5-Stage Pipelined RISC-V Processor
+# 32-bit 5-Stage Pipelined RISC-V Processor (RV32I)
 
 ## Overview
 
-This project implements a 32-bit 5-stage pipelined RISC-V (RV32I) processor in Verilog HDL.
+This project implements a 32-bit 5-stage Pipelined RISC-V (RV32I) Processor in Verilog HDL. The design is being developed and verified module-by-module using Icarus Verilog, GTKWave, and Vivado.
 
-The processor consists of the following stages:
+---
+
+## Design Flow
+
+- RTL Design (Verilog HDL)
+- Functional Verification (Testbench)
+- Simulation using Icarus Verilog
+- Waveform Analysis using GTKWave
+- RTL Schematic using Vivado
+- FPGA Implementation (Future)
+
+---
+
+## Processor Pipeline
 
 - Instruction Fetch (IF)
 - Instruction Decode (ID)
@@ -12,42 +25,47 @@ The processor consists of the following stages:
 - Memory Access (MEM)
 - Write Back (WB)
 
-## Features
+---
 
-- 32-bit RV32I Architecture
-- Five-stage pipeline
-- Hazard Detection Unit
-- Forwarding Unit
-- Branch Handling
-- Verilog HDL Implementation
-- Functional Verification using Icarus Verilog & GTKWave
-- RTL Synthesis using Xilinx Vivado
+## Project Progress
 
-## Project Structure
+| Module | Status |
+|---------|--------|
+| Repository Setup | ✅ Completed |
+| Folder Structure | ✅ Completed |
+| Program Counter (PC) | ✅ Completed |
+| Instruction Memory | ⏳ In Progress |
+| Register File | ⏳ Pending |
+| Immediate Generator | ⏳ Pending |
+| Control Unit | ⏳ Pending |
+| ALU | ⏳ Pending |
+| Data Memory | ⏳ Pending |
+| Hazard Detection Unit | ⏳ Pending |
+| Forwarding Unit | ⏳ Pending |
+| Top-Level Processor | ⏳ Pending |
 
-```text
-RTL/
-Testbench/
-Simulation/
-Docs/
-Images/
-Reports/
-```
+---
 
 ## Tools Used
 
 - Verilog HDL
 - Icarus Verilog
 - GTKWave
-- Xilinx Vivado
+- Vivado
+- Git & GitHub
 
-## Project Status
+---
 
-Under Development
+## Verification
 
-### Completed
-- Repository setup
-- Project folder structure
+### Program Counter Waveform
 
-### Next Milestone
-- Program Counter (PC)
+![Program Counter Waveform](images/pc_waveform.png)
+
+---
+
+## Author
+
+**Arun**  
+B.Tech Electronics and Communication Engineering  
+SVNIT Surat
